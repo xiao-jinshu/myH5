@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/zhufeng-animate.1.0.0.min.css">
+    <script>
+        //设置rem比
+        let x = 100 * (document.documentElement.clientWidth || document.body.clientWidth) / 750;
+        document.documentElement.style.fontSize = x + 'px';
+    </script>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            /* display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex; */
+            /* display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <section id="app" class="swiper-wrapper">
+            <div class="music_icon"></div>
+            <!--第一张  -->
+            <div class="first_page swiper-slide">
+                <div class="header">
+                    <p>个人</p>
+                    <p>简历</p>
+                </div>
+                <div class="name">
+                    <p>姓名：肖金舒</p>
+                    <p>求职意向：前端开发工程师</p>
+                    <p>地点：北京</p>
+                </div>
+                <p class="maxim">座右铭：爱你三千遍</p>
+                <div class="foot"></div>
+            </div>
+            <!-- 第二张 -->
+            <div class="two_page swiper-slide">
+                <div class="header">
+                    <p>-个人信息-</p>
+                </div>
+                <div class="box_top"></div>
+                <img src="./img/timg.jpg" alt="">
+                <div class="box">
+                    <div class="bod">
+                        <p class="clearfix"><span class="left">姓名：肖金舒</span><span class="right">性别：男</span></p>
+                        <p class="clearfix"><span class="left">籍贯：江西</span><span class="right">生日：1994年1月20日</span></p>
+                        <p>教育背景：2012.9-2015.7 江西电力职业技术学院</p>
+                        <p>教育背景：2016.9-2020.6 江南大学</p>
+                        <p>电话：13979109917</p>
+                        <p>邮箱：2725303182@qq.com</p>
+                        <p>通讯地址：北京昌平区霍营街道国风美唐</p>
+                        <p>兴趣爱好：读书、唱歌、电影、计算机</p>
+                        <p>理想：做一个对社会有贡献的人</p>
+                    </div>
+                </div>
+                <div class="box_bottom"></div>
+            </div>
+            <!-- 第三张 -->
+            <div class="three_page swiper-slide">
+                <div class="header">
+                    <p>-工作经历-</p>
+                </div>
+                <div class="content_top">
+                    <h2>深圳天美广告公司</h2>
+                    <h3>2015.2-2016.2 前端开发实习生</h3>
+                    <p>协助同事完成前端开发工作</p>
+                    <p>编写HTML、CSS页面</p>
+                    <p>构思项目需求的实现，为项目做一些简单的js开发，熟悉公司项目代码</p>
+                </div>
+                <div class="content">
+                    <h2>腾讯计算机系统有限公司</h2>
+                    <h3>2016.3-2018.12 前端工程师</h3>
+                    <p>学习优秀的项目开发经验</p>
+                    <p>参与公司的日常项目开发，插件与方法的封装，以及框架的开发</p>
+                    <p>参与工作项目讨论、提出构思与解决方案，协助上司完成各项工作</p>
+                </div>
+
+            </div>
+            
+        </section>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container');
+    </script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //     autoplay: true,//可选选项，自动滑动
+        })
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

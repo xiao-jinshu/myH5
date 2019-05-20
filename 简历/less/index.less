@@ -1,0 +1,252 @@
+.wh(){
+    width: 100%;
+    height: 100%;
+}
+body,html{
+     .wh();
+}
+#app{
+    .wh();
+    background-color: rgb(235, 232, 232);
+    //音乐图标
+    .music_icon{
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        width: .8rem;
+        height: .8rem;
+        background: url(../img/qqq.svg);
+        background-size: contain;
+        animation: move123 1s linear infinite;//设置动画
+        animation-play-state: paused;//暂停旋转 
+    }
+    //第一张
+    .first_page{
+        background: url(../img/donghua.gif);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .header{
+            animation: pulse 1s linear;
+            box-sizing: border-box;
+            padding: 1rem;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            background: url(../img/quan.webp) no-repeat;
+            background-size:  cover;
+            width: 100%;
+            height: 6rem;
+            p{
+                animation: zoomIn 1s linear;
+                line-height: 1.8rem;
+                text-align: center;
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+        }
+        .name{
+            animation: fadeInDown 1s linear;        
+            position: absolute;
+            left: 0;
+            bottom: 14%;
+            width: 100%;
+            height: 2rem;
+            line-height: .6rem;
+            font-size: .3rem;
+            text-align: center;
+            background: rgb(49, 49, 49);
+            color: #fff;
+            p{
+                animation: zoomIn 1s linear;  
+            }
+        }
+        .maxim{
+            animation: move123 1s linear;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+            font-size: .26rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .foot{
+            animation: fadeInLeft 1s linear;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1rem;
+            background: url(../img/yan.webp) no-repeat;
+        }
+    }
+    //第二张
+    .two_page{
+
+        background: url(../img/donghua.gif);
+        // position: absolute;
+
+        // top: 0;
+        // left: 7.5rem;
+        // z-index: 55;
+        // width: 7.5rem;
+        // height: 100%;
+        .header{
+            //animation: move123 1s linear;
+            // width: 100%;
+            height: 1.4rem;
+            margin: 0 auto;
+            margin-top: 1.2rem; 
+            background: url(../img/changtiao.webp) no-repeat;
+            background-size: 100%; 
+            p{
+                line-height: 1rem;
+                text-align: center;
+                font-size: .4rem;
+                font-weight: 700;
+            }
+        }
+        .box_top{
+            
+            //animation: bounceInLeft 2s linear;
+            margin: .8rem auto;
+            padding: .16rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            border: 1px solid #000;
+           
+        }
+        img{
+            //animation: bounceInRight 2s linear;
+            position: absolute;
+            left: 2.1rem;
+            top: 3.6rem;
+            border: 1px solid #000;
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+        .box{
+            // animation: flipInX 2s linear;
+            margin: .4rem auto;
+            width: 6rem;
+            .bod{
+                //animation: flipInX 2s linear;
+                padding-left: .4rem; 
+                height: 4rem;
+                border-left: 1px solid #000;
+                p{
+                    text-align: left;
+                    font-size: .3rem;
+                    font-weight: 700;
+                   .left{
+                       width: 40%;
+                       float: left;
+                   } 
+                   .right{
+                         width: 60%;
+                         float: right;
+                   }
+                }
+            }
+        }
+        .box_bottom{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1rem;
+            background: #000;
+        }
+
+    }
+    
+    //第三张
+    .three_page{
+        .header{
+            //animation: move123 1s linear;
+            // width: 100%;
+            height: 1.4rem;
+            margin: 0 auto;
+            margin-top: 1rem; 
+            background: url(../img/changtiao.webp) no-repeat;
+            background-size: 100%; 
+            p{
+                line-height: 1rem;
+                text-align: center;
+                font-size: .4rem;
+                font-weight: 700;
+            }
+        } 
+        .content_top{ 
+            padding: .4rem;
+            margin-top: .6rem;
+            line-height: .7rem;
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            border-bottom: 1px solid #000;
+            h2{
+                //animation: bounceInLeft 2s linear;
+                font-size: .4rem;
+            }
+            h3{
+                //animation: bounceInLeft 2s linear;
+                font-size: .36rem;
+            }
+            p{
+                //animation: bounceInRight 2s linear;
+            }
+            p::before{
+                content: '';
+                display: inline-block;
+                border-radius: 50%;
+                background: #000;
+                border: 1px solid #000;
+                width: .1rem;
+                height: .1rem;
+            }
+        }
+        .content{
+            padding: .4rem;
+            margin-top: .6rem;
+            line-height: .7rem;
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            h2{
+                //animation: bounceInLeft 2s linear;
+               font-size: .4rem;
+            }
+            h3{
+                //animation: bounceInLeft 2s linear;
+                font-size: .36rem;
+            }
+            p{
+                //animation: bounceInRight 2s linear;
+            }
+            p::before{
+                content: '';
+                display: inline-block;
+                border-radius: 50%;
+                background: #000;
+                border: 1px solid #000;
+                width: .1rem;
+                height: .1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+//动画帧
+@keyframes move123{
+    0%{
+      transform: rotate(0)
+    }
+    100%{
+      transform: rotate(360deg)
+    }
+  }
